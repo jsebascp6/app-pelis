@@ -28,6 +28,7 @@ public/packs-test/
 log/
 *.log
 karma-*
+vendor/cache/
 
 # Ignore uploaded files in development.
 /storage/*
