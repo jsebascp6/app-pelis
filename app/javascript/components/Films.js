@@ -5,7 +5,18 @@ class Films extends React.Component {
   render () {
     return  (
       <>
-        <h1>Esto es una pelicula</h1>
+        <div className='header'>
+          <h1>Peliculas</h1>
+          <button>+ Crear nueva pelicula</button>
+        </div>
+        <div className='body'>
+          <div className='film'>
+            <div className='reserve'>
+              <button>Reservar</button>
+            </div>
+            <div className='image-film'></div>
+          </div>
+        </div>
       </>
     )
   }

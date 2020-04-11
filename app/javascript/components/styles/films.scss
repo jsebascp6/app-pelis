@@ -1,0 +1,72 @@
+.header {
+  justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: center;
+  display: flex;
+
+  h1 {
+    font-weight: 100;
+    margin: 0;
+  }
+
+  button {
+    background-color: #00a2f9;
+    border-radius: 36px;
+    font-size: 20px;
+    padding: 0 30px;
+    height: 50px;
+    border: 0;
+    color: #fff;
+  }
+}
+
+.body {
+  grid-template-columns: 170px 170px 170px 170px;
+  display: grid;
+  height: 220px;
+
+  .film {
+    .image-film {
+      background-image: url("https://es.web.img3.acsta.net/pictures/19/09/17/17/03/5442885.jpg");
+      background-repeat: round;
+      background-size: cover;
+      justify-self: center;
+      height: 220px;
+      width: 170px;
+    }
+
+    .reserve {
+      display: none;
+    }
+
+    &:hover {
+      .reserve {
+        background-color: rgba(233, 227, 227, 0.5);
+        flex-direction: column-reverse;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        height: 220px;
+        width: 170px;
+        z-index: 1;
+
+        button {
+          background-color: #00a2f9;
+          margin-bottom: 20px;
+          border-radius: 36px;
+          font-size: 12px;
+          cursor: pointer;
+          display: block;
+          padding: 10px;
+          color: #fff;
+          width: 80%;
+          border: 0;
+        }
+      }
+
+      .image-film {
+        position: absolute;
+      }
+    }
+  }
+}
