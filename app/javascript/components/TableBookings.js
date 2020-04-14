@@ -36,7 +36,7 @@ class TableBookings extends React.Component {
   }
 
   componentDidMount(){
-    axios.get('http://localhost:3000/v1/bookings')
+    axios.get("http://localhost:3000/v1/bookings")
       .then(res=>{
         this.setState({ bookings: res.data.data});
       })

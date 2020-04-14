@@ -1,4 +1,4 @@
-import React     from "react"
+import React from "react"
 import { Modal, Button } from 'antd'
 import axios from "axios"
 import TotalMovies from './TotalMovies'
@@ -34,15 +34,15 @@ class Films extends React.Component {
       description: event.target[1].value,
       image_url: event.target[2].value
     }
-    axios.post('http://localhost:3000/v1/movies', {
+    axios.post("http://localhost:3000/v1/movies", {
       movie
     })
     window.location.reload(false)
   }
 
   render () {
-    const { visible, loading } = this.state;
-    return  (
+    const { visible, loading } = this.state
+    return(
       <>
         <div className='header'>
           <h1>Peliculas</h1>

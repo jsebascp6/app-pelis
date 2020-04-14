@@ -1,9 +1,9 @@
-import React     from "react"
+import React from "react"
 import TableBookings from './TableBookings'
 
 class Reserves extends React.Component {
-  render () {
-    return  (
+  render() {
+    return(
       <>
         <div className='header'>
           <h1>Reservas Realizadas</h1>

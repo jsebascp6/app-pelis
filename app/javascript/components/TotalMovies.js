@@ -1,4 +1,4 @@
-import React     from "react"
+import React from "react"
 import { Modal, Button } from 'antd'
 import axios from "axios"
 
@@ -43,7 +43,7 @@ class TotalMovies extends React.Component {
       email: event.target[3].value,
       id_movie: event.target[4].value
     }
-    axios.post('http://localhost:3000/v1/bookings', {
+    axios.post("http://localhost:3000/v1/bookings", {
       user 
     })
     window.location.reload(false)
