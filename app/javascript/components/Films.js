@@ -46,24 +46,25 @@ class Films extends React.Component {
       <>
         <div className='header'>
           <h1>Peliculas</h1>
-          <button onClick={this.showModal}>+ Crear nueva pelicula</button>
+          <button onClick={this.showModal} className='primary button-create-movie'>+ Crear nueva pelicula</button>
           <Modal
             visible={visible}
             onOk={this.handleOk}
             onCancel={this.handleCancel}
             footer={null}
           >
-           <form onSubmit={this.handleSubmit}>
+           <h1>Crear Pelicula</h1>
+           <form onSubmit={this.handleSubmit} className='body-modal'>
              <label> Name:
-               <input type="text" name="name"/>
+               <input type="text" name="name" className='input-primary'/>
              </label>
              <label> Description:
-               <input type="text" name="description"/>
+               <input type="text" name="description" className='input-primary'/>
              </label>
              <label> Imagen:
-               <input type="text" name="image_url"/>
+               <input type="text" name="image_url" className='input-primary'/>
              </label>
-             <button type="submit"> Add </button>
+             <button type="submit" className='primary'> + Crear Pelicula </button>
            </form>
           </Modal>
         </div>

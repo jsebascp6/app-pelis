@@ -57,28 +57,31 @@ class TotalMovies extends React.Component {
           {this.state.movies.map(movie => (
             <div className='film' key={movie.id}>
               <div className='reserve'>
-                <button onClick={this.showModal}>Reservar</button>
+                <button onClick={this.showModal} className='primary button-booking'>Reservar</button>
                 <Modal
                   visible={visible}
                   onOk={this.handleOk}
                   onCancel={this.handleCancel}
                   footer={null}
                 >
-                 <form onSubmit={this.handleSubmit}>
-                   <label> Nombre Completo:
-                     <input type="text" name="name"/>
-                   </label>
-                   <label> Celular:
-                     <input type="text" name="phone"/>
-                   </label>
-                   <label> Cedula:
-                     <input type="text" name="cedula"/>
-                   </label>
-                   <label> Correo Electronico:
-                     <input type="text" name="email"/>
-                   </label>
+                 <h1>Reservar</h1>
+                 <form onSubmit={this.handleSubmit} className='body-modal-booking'>
+                   <div>
+                     <label> Nombre Completo:
+                       <input type="text" name="name" className='input-primary'/>
+                     </label>
+                     <label> Celular:
+                       <input type="text" name="phone" className='input-primary'/>
+                     </label>
+                     <label> Cedula:
+                       <input type="text" name="cedula" className='input-primary'/>
+                     </label>
+                     <label> Correo Electronico:
+                       <input type="text" name="email" className='input-primary'/>
+                     </label>
+                   </div>
                    <input type="hidden" name="id_movie" value={movie.id}/>
-                   <button type="submit"> Add </button>
+                   <button type="submit" className='primary'> Reservar Ahora </button>
                  </form>
                 </Modal>
               </div>
