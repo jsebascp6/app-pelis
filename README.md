@@ -1,24 +1,10 @@
-# README
+sudo docker-compose build
+sudo docker-compose run web /bin/bash
+  - yarn install
+  - bundle install
+  - bundle exec rails db:create
+  - bundle exec rails db:migrate
+  - exit
+sudo docker-compose up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ingresar a localhost:3000 en el navegador
