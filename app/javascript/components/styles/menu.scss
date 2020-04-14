@@ -1,12 +1,3 @@
-.ant-layout-has-sider {
-  min-height: 100vh;
-  display: flex;
-
-  .ant-layout-sider {
-    background-color: rgb(9, 134, 251);
-  }
-}
-
 .container {
   display: flex;
 
@@ -16,7 +7,6 @@
     flex-direction: column;
     min-height: 100vh;
     display: flex;
-    width: 169px;
 
     a {
       padding: 20px 60px 20px 15px;
@@ -31,7 +21,8 @@
   }
 
   .content {
-    width: calc(100% - 448px);
+    width: calc(100% - 440px);
+    box-sizing: unset;
     padding: 90px;
   }
 }

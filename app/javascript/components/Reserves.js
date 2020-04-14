@@ -1,11 +1,16 @@
 import React     from "react"
-import PropTypes from "prop-types"
+import TableBookings from './TableBookings'
 
 class Reserves extends React.Component {
   render () {
     return  (
       <>
-        <h1>Esto es una reserva</h1>
+        <div className='header'>
+          <h1>Reservas Realizadas</h1>
+        </div>
+        <div>
+          <TableBookings />
+        </div>
       </>
     )
   }

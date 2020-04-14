@@ -5,6 +5,7 @@ import Films from './Films'
 import Reserves from './Reserves'
 import './App.scss'
 import { CalendarOutlined, VideoCameraOutlined } from '@ant-design/icons'
+import "antd/dist/antd.css"
 
 class App extends React.Component {
   render () {
